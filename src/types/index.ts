@@ -6,7 +6,7 @@ export interface WeddingData {
   date: string;
   time: string;
   venue: Venue;
-  events: Event[];
+  events: WeddingEvent[];
   loveStory: LoveStory[];
   gallery: string[];
   bankAccounts: BankAccount[];
@@ -30,7 +30,7 @@ export interface Venue {
   mapEmbed?: string;
 }
 
-export interface Event {
+export interface WeddingEvent {
   title: string;
   date: string;
   time: string;

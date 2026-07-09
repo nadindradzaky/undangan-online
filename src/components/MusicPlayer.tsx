@@ -1,8 +1,8 @@
 'use client';
 
-import { useState, useRef, useEffect } from 'react';
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Music, Pause, Volume2, VolumeX } from 'lucide-react';
+import { Music, VolumeX } from 'lucide-react';
 
 interface MusicPlayerProps {
   isPlaying: boolean;

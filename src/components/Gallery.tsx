@@ -15,8 +15,6 @@ export default function Gallery() {
   const openGallery = () => setIsOpen(true);
   const closeGallery = () => setIsOpen(false);
 
-  const previewImages = images.slice(0, 4);
-
   return (
     <section className="relative min-h-screen py-20 px-6">
       <div className="absolute inset-0 bg-gradient-to-b from-cream via-ivory to-cream opacity-30" />

@@ -4,7 +4,7 @@ export const weddingData: WeddingData = {
   couple: {
     bride: {
       name: 'Caca',
-      fullName: 'Salsabila Rismayanti S.SOS',
+      fullName: 'Salsabila Rismayanti',
       parent: 'Putri kedua dari Bapak Taufik Haryadi & Ibu Sundari',
       instagram: 'salsabila_.r',
       image: '/images/bride.jpeg',
@@ -12,7 +12,7 @@ export const weddingData: WeddingData = {
     },
     groom: {
       name: 'Imam',
-      fullName: 'Imam Muharik A. Md',
+      fullName: 'Imam Muharik',
       parent: 'Putra ketujuh dari Bapak Misan & Ibu Mardiah (Almh)',
       instagram: 'imammuharik_',
       image: '/images/groom.jpeg',
@@ -85,20 +85,16 @@ export const weddingData: WeddingData = {
   ],
   bankAccounts: [
     {
-      bank: 'Bank Mandiri',
-      name: 'Imam Muharik A. Md',
-      number: '123-00-6789012-3',
+      bank: 'Gopay',
+      name: 'Imam Muharik',
+      number: '+62 838-7754-0107',
     },
     {
       bank: 'Bank BCA',
-      name: 'Salsabila Rismayanti S.SOS',
-      number: '456-01-2345678-9',
+      name: 'Salsabila Rismayanti',
+      number: '5485337749',
     },
-    {
-      bank: 'Bank BRI',
-      name: 'Imam Muharik A. Md',
-      number: '7890-01-123456-7-8',
-    },
+   
   ],
   quotes: {
     text: 'Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang.',
@@ -116,7 +112,7 @@ export const initialWishes: Wish[] = [
     name: 'Sarah Amelia',
     message: 'Selamat menempuh hidup baru kak! Semoga langgeng dan bahagia selalu. 🎉',
     attendance: 'hadir',
-    date: '20 Des 2026',
+    date: '11 juli 2026',
     avatar: 'SA',
   },
   {
@@ -124,7 +120,7 @@ export const initialWishes: Wish[] = [
     name: 'Budi Santoso',
     message: 'Barakallah untuk pernikahannya. Semoga menjadi keluarga yang sakinah, mawaddah, warahmah.',
     attendance: 'hadir',
-    date: '19 Des 2026',
+    date: '11 juli 2026',
     avatar: 'BS',
   },
   {
@@ -132,7 +128,7 @@ export const initialWishes: Wish[] = [
     name: 'Dewi Lestari',
     message: 'Mohon maaf tidak bisa hadir karena ada acara keluarga. Doa terbaik untuk kalian berdua! 🙏',
     attendance: 'tidak_hadir',
-    date: '18 Des 2026',
+    date: '13 juli 2026',
     avatar: 'DL',
   },
 ];

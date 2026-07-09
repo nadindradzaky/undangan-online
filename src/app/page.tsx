@@ -9,8 +9,8 @@ import Cover from '@/components/Cover';
 import Opening from '@/components/Opening';
 import Quote from '@/components/Quote';
 import Couple from '@/components/Couple';
-import Timeline from '@/components/Timeline';
 import Gallery from '@/components/Gallery';
+import Gift from '@/components/Gift';
 import Countdown from '@/components/Countdown';
 import Event from '@/components/Event';
 import RSVP from '@/components/RSVP';
@@ -137,8 +137,8 @@ export default function Home() {
                 <Opening />
                 <Quote />
                 <Couple />
-                <Timeline />
                 <Gallery />
+                <Gift />
                 <Countdown />
                 <Event />
                 <RSVP />

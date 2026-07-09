@@ -46,7 +46,7 @@ export default function Opening() {
           <div className="mt-10 space-y-6">
             {/* Groom */}
             <div>
-              <p className="font-serif text-2xl text-burgundy font-semibold">
+              <p className="font-script text-3xl text-burgundy">
                 {weddingData.couple.groom.fullName}
               </p>
               <p className="text-xs text-dusty-pink mt-1 font-sans tracking-wider uppercase">
@@ -62,7 +62,7 @@ export default function Opening() {
 
             {/* Bride */}
             <div>
-              <p className="font-serif text-2xl text-burgundy font-semibold">
+              <p className="font-script text-3xl text-burgundy">
                 {weddingData.couple.bride.fullName}
               </p>
               <p className="text-xs text-dusty-pink mt-1 font-sans tracking-wider uppercase">

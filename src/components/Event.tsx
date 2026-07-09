@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { MapPin, Clock, Calendar, ExternalLink } from 'lucide-react';
+import { MapPin, Clock, Calendar } from 'lucide-react';
 import { weddingData } from '@/lib/data';
 import FloralOrnament from './FloralOrnament';
 import RevealAnimation from './RevealAnimation';

@@ -68,7 +68,7 @@ export default function ThankYou() {
         <RevealAnimation direction="up" delay={0.9}>
           <div className="mt-12 space-y-2">
             <p className="font-serif text-2xl text-burgundy font-semibold">
-              {weddingData?.couple?.groom?.name} & {weddingData?.couple?.bride?.name}
+              {weddingData.couple.groom.name} & {weddingData.couple.bride.name}
             </p>
           </div>
         </RevealAnimation>

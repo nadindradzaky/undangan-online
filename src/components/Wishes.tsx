@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { initialWishes } from '@/lib/data';
-import type { Wish, RSVPData } from '@/types';
+import type { Wish } from '@/types';
 import FloralOrnament from './FloralOrnament';
 import RevealAnimation from './RevealAnimation';
 import { getInitials } from '@/lib/utils';
