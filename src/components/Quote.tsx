@@ -11,9 +11,14 @@ export default function Quote() {
       <div className="absolute inset-0 bg-gradient-to-b from-cream via-ivory to-cream">
         <div className="absolute inset-0 opacity-[0.03]">
           <svg className="w-full h-full" viewBox="0 0 430 500" fill="none">
-            {Array.from({ length: 15 }).map((_, i) => (
-              <circle key={i} cx={Math.random() * 430} cy={Math.random() * 500} r={Math.random() * 60 + 20} fill="currentColor" className="text-olive" />
-            ))}
+              {[
+                [60, 100, 60], [370, 200, 40], [80, 350, 55], [350, 450, 45],
+                [40, 200, 50], [400, 350, 35], [150, 400, 65], [320, 100, 40],
+                [200, 300, 55], [380, 480, 35], [100, 250, 45], [360, 50, 40],
+                [250, 150, 50], [180, 50, 60], [300, 450, 40],
+              ].map(([cx, cy, r], i) => (
+                <circle key={i} cx={cx} cy={cy} r={r} fill="currentColor" className="text-olive" />
+              ))}
           </svg>
         </div>
       </div>

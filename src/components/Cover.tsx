@@ -48,8 +48,14 @@ export default function Cover({ onOpen, guestName = '' }: CoverProps) {
           {/* Floral Background Pattern */}
           <div className="absolute inset-0 opacity-[0.06]">
             <svg className="w-full h-full" viewBox="0 0 430 932" fill="none">
-              {Array.from({ length: 20 }).map((_, i) => (
-                <circle key={i} cx={Math.random() * 430} cy={Math.random() * 932} r={Math.random() * 40 + 10} fill="currentColor" className="text-olive" opacity={Math.random() * 0.5 + 0.1} />
+              {[
+                [80, 120, 35], [350, 200, 25], [50, 400, 45], [380, 550, 30],
+                [120, 700, 40], [310, 800, 25], [200, 50, 20], [400, 350, 35],
+                [30, 600, 30], [420, 700, 20], [150, 250, 15], [280, 150, 35],
+                [70, 850, 25], [360, 80, 20], [200, 500, 40], [100, 300, 30],
+                [340, 650, 25], [250, 80, 35], [170, 550, 20], [390, 250, 30],
+              ].map(([cx, cy, r], i) => (
+                <circle key={i} cx={cx} cy={cy} r={r} fill="currentColor" className="text-olive" />
               ))}
             </svg>
           </div>
@@ -192,16 +198,18 @@ export default function Cover({ onOpen, guestName = '' }: CoverProps) {
           </div>
 
           {/* Time Display */}
-          <motion.div
-            className="absolute bottom-4 text-center"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 2.8 }}
-          >
-            <p className="text-xs text-dusty-pink/60 font-sans tracking-wider">
-              {time.hours}:{time.minutes} {time.period}
-            </p>
-          </motion.div>
+          {time.hours && (
+            <motion.div
+              className="absolute bottom-4 text-center"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1, delay: 2.8 }}
+            >
+              <p className="text-xs text-dusty-pink/60 font-sans tracking-wider">
+                {time.hours}:{time.minutes} {time.period}
+              </p>
+            </motion.div>
+          )}
         </motion.div>
       )}
     </AnimatePresence>

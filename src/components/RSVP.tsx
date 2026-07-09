@@ -37,10 +37,33 @@ export default function RSVP() {
   });
 
   const onSubmit = async (data: RSVPFormData) => {
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-    console.log('RSVP Data:', data);
-    setIsSubmitted(true);
-    reset();
+    try {
+      const payload = {
+        _subject: 'RSVP - Pernikahan Imam & Caca',
+        _captcha: 'false',
+        name: data.name,
+        attendance: data.attendance === 'hadir' ? 'Hadir' : data.attendance === 'tidak_hadir' ? 'Tidak Hadir' : 'Masih Ragu',
+        'Jumlah Tamu': data.guestCount,
+        'Pesan & Doa': data.message || '-',
+      };
+
+      const res = await fetch('https://formsubmit.co/ajax/alexsander1a2b3c@gmail.com', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      });
+
+      const result = await res.json();
+
+      if (result.success) {
+        setIsSubmitted(true);
+        reset();
+      } else {
+        alert('Gagal mengirim: ' + (result.message || 'Terjadi kesalahan'));
+      }
+    } catch {
+      alert('Gagal mengirim RSVP. Silakan coba lagi.');
+    }
   };
 
   if (isSubmitted) {

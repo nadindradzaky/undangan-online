@@ -6,7 +6,7 @@ import FloralOrnament from './FloralOrnament';
 import RevealAnimation from './RevealAnimation';
 
 export default function Countdown() {
-  const targetDate = 'December 20, 2026 08:00:00';
+  const targetDate = 'August 1, 2026 08:00:00';
   const countdown = useCountdown(targetDate);
 
   const timeUnits = [
@@ -22,9 +22,17 @@ export default function Countdown() {
       <div className="absolute inset-0 bg-gradient-to-b from-ivory via-cream to-ivory">
         <div className="absolute inset-0 opacity-[0.04]">
           <svg className="w-full h-full" viewBox="0 0 430 600" fill="none">
-            {Array.from({ length: 25 }).map((_, i) => (
-              <circle key={i} cx={Math.random() * 430} cy={Math.random() * 600} r={Math.random() * 30 + 10} fill="currentColor" className="text-olive" />
-            ))}
+              {[
+                [50, 80, 35], [380, 150, 20], [80, 300, 40], [350, 450, 25],
+                [40, 550, 30], [400, 50, 25], [150, 100, 20], [300, 250, 35],
+                [200, 400, 15], [380, 580, 30], [70, 450, 25], [420, 300, 20],
+                [120, 200, 35], [340, 80, 25], [60, 500, 40], [390, 200, 30],
+                [280, 550, 20], [160, 350, 25], [320, 150, 35], [250, 480, 20],
+                [100, 50, 30], [360, 350, 20], [200, 250, 25], [300, 500, 35],
+                [180, 150, 20],
+              ].map(([cx, cy, r], i) => (
+                <circle key={i} cx={cx} cy={cy} r={r} fill="currentColor" className="text-olive" />
+              ))}
           </svg>
         </div>
       </div>
@@ -65,7 +73,7 @@ export default function Countdown() {
         <RevealAnimation delay={0.4}>
           <div className="mt-8 p-4 bg-white/40 backdrop-blur-sm rounded-sm border border-gold/10">
             <p className="font-serif text-base text-charcoal/80">
-              {new Date('2026-12-20').toLocaleDateString('id-ID', {
+              {new Date('2026-08-01').toLocaleDateString('id-ID', {
                 weekday: 'long',
                 year: 'numeric',
                 month: 'long',

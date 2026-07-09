@@ -13,9 +13,7 @@ import Timeline from '@/components/Timeline';
 import Gallery from '@/components/Gallery';
 import Countdown from '@/components/Countdown';
 import Event from '@/components/Event';
-import LiveStreaming from '@/components/LiveStreaming';
 import RSVP from '@/components/RSVP';
-import Gift from '@/components/Gift';
 import Wishes from '@/components/Wishes';
 import ThankYou from '@/components/ThankYou';
 import FloatingButtons from '@/components/FloatingButtons';
@@ -143,9 +141,7 @@ export default function Home() {
                 <Gallery />
                 <Countdown />
                 <Event />
-                <LiveStreaming />
                 <RSVP />
-                <Gift />
                 <Wishes />
                 <ThankYou />
 
