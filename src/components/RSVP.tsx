@@ -38,19 +38,18 @@ export default function RSVP() {
 
   const onSubmit = async (data: RSVPFormData) => {
     try {
-      const payload = {
-        _subject: 'RSVP - Pernikahan Imam & Caca',
-        _captcha: 'false',
-        name: data.name,
-        attendance: data.attendance === 'hadir' ? 'Hadir' : data.attendance === 'tidak_hadir' ? 'Tidak Hadir' : 'Masih Ragu',
-        'Jumlah Tamu': data.guestCount,
-        'Pesan & Doa': data.message || '-',
-      };
-
-      const res = await fetch('https://formsubmit.co/ajax/alexsander1a2b3c@gmail.com', {
+      const res = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload),
+        body: JSON.stringify({
+          access_key: 'afbd8677-cdef-4568-8ccc-75692f343d34',
+          subject: 'RSVP - Pernikahan Imam & Caca',
+          from_name: data.name,
+          Nama: data.name,
+          Kehadiran: data.attendance === 'hadir' ? 'Hadir' : data.attendance === 'tidak_hadir' ? 'Tidak Hadir' : 'Masih Ragu',
+          'Jumlah Tamu': data.guestCount,
+          'Pesan & Doa': data.message || '-',
+        }),
       });
 
       const result = await res.json();
@@ -59,10 +58,10 @@ export default function RSVP() {
         setIsSubmitted(true);
         reset();
       } else {
-        alert('Gagal mengirim: ' + (result.message || 'Terjadi kesalahan'));
+        alert('Gagal mengirim: ' + (result.message || 'Coba lagi'));
       }
     } catch {
-      alert('Gagal mengirim RSVP. Silakan coba lagi.');
+      alert('Gagal mengirim. Coba lagi nanti.');
     }
   };
 

@@ -10,9 +10,9 @@ export default function Event() {
   const { venue, events } = weddingData;
 
   const addToCalendar = () => {
-    const eventDate = new Date('2026-08-01T08:00:00');
+    const eventDate = new Date('2026-08-01T09:00:00');
     const endDate = new Date('2026-08-01T17:00:00');
-    const url = `https://www.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent('Pernikahan Imam & Caca')}&dates=${eventDate.toISOString().replace(/[-:]/g, '').split('.')[0]}Z/${endDate.toISOString().replace(/[-:]/g, '').split('.')[0]}Z&details=${encodeURIComponent('Pernikahan Imam Muharrik & Salsabilah Rismayanti')}&location=${encodeURIComponent(venue.address)}`;
+    const url = `https://www.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent('Pernikahan Imam & Caca')}&dates=${eventDate.toISOString().replace(/[-:]/g, '').split('.')[0]}Z/${endDate.toISOString().replace(/[-:]/g, '').split('.')[0]}Z&details=${encodeURIComponent('Pernikahan Imam Muharik A. Md & Salsabila Rismayanti S.SOS')}&location=${encodeURIComponent(venue.address)}`;
     window.open(url, '_blank');
   };
 

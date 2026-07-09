@@ -6,7 +6,7 @@ import FloralOrnament from './FloralOrnament';
 import RevealAnimation from './RevealAnimation';
 
 export default function Countdown() {
-  const targetDate = 'August 1, 2026 08:00:00';
+  const targetDate = 'August 1, 2026 09:00:00';
   const countdown = useCountdown(targetDate);
 
   const timeUnits = [

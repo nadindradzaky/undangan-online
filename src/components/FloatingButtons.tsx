@@ -25,8 +25,8 @@ export default function FloatingButtons() {
     if (navigator.share) {
       try {
         await navigator.share({
-          title: 'Pernikahan Caca & Imam',
-          text: 'Undangan Pernikahan Salsabilah rismayanti & Imam muharik',
+          title: 'Pernikahan Imam & Caca',
+          text: 'Undangan Pernikahan Imam Muharik A. Md & Salsabila Rismayanti S.SOS',
           url: url,
         });
       } catch {

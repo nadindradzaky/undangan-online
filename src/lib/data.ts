@@ -4,26 +4,26 @@ export const weddingData: WeddingData = {
   couple: {
     bride: {
       name: 'Caca',
-      fullName: 'Salsabilah Rismayanti',
-      parent: 'Putri dari Bapak Taufik Haryadi& Ibu Su. ...',
+      fullName: 'Salsabila Rismayanti S.SOS',
+      parent: 'Putri kedua dari Bapak Taufik Haryadi & Ibu Sundari',
       instagram: 'salsabila_.r',
       image: '/images/bride.jpeg',
-      description: 'Putri pertama dari pasangan Bapak ... & Ibu ...',
+      description: 'Putri kedua dari pasangan Bapak Taufik Haryadi & Ibu Sundari',
     },
     groom: {
       name: 'Imam',
-      fullName: 'Imam Muharrik',
-      parent: 'Putra dari Bapak H. ... & Ibu Hj. ...',
+      fullName: 'Imam Muharik A. Md',
+      parent: 'Putra ketujuh dari Bapak Misan & Ibu Mardiah (Almh)',
       instagram: 'imammuharik_',
       image: '/images/groom.jpeg',
-      description: 'Putra pertama dari pasangan Bapak ... & Ibu ...',
+      description: 'Putra ketujuh dari pasangan Bapak Misan & Ibu Mardiah (Almh)',
     },
   },
   date: 'Sabtu, 1 Agustus 2026',
-  time: '08:00 - 17:00 WIB',
+  time: '09:00 - 17:00 WIB',
   venue: {
     name: 'Masjid Jami Dhuyufurrahman',
-    address: 'Jl. Raya Jakarta-Bogor No.28, RT.5/RW.1, Jatijajar, Kec. Tapos, Kota Depok, Jawa Barat 16451',
+    address: 'Terminal Jatijajar, Kec. Tapos, Kota Depok, Jawa Barat 16415',
     mapsUrl: 'https://maps.google.com/?q=Masjid+Jami+Dhuyufurrahman+Jatijajar+Tapos+Depok',
     mapEmbed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.2!2d106.8815!3d-6.4018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69eb5a5b5b5b5b%3A0x5b5b5b5b5b5b5b5b!2sMasjid%20Jami%20Dhuyufurrahman!5e0!3m2!1sid!2sid!4v1',
   },
@@ -31,14 +31,14 @@ export const weddingData: WeddingData = {
     {
       title: 'Akad Nikah',
       date: '1 Agustus 2026',
-      time: '08:00 - 10:00 WIB',
-      description: 'Prosesi akad nikah yang sakral dan penuh berkah',
+      time: '09:00 WIB',
+      description: 'Bertempat di Masjid Jami Dhuyufurrahman - Terminal Jatijajar',
     },
     {
       title: 'Resepsi',
       date: '1 Agustus 2026',
       time: '11:00 - 17:00 WIB',
-      description: 'Resepsi pernikahan dengan hiburan dan jamuan makan',
+      description: 'Bertempat di Masjid Jami Dhuyufurrahman - Terminal Jatijajar',
     },
   ],
   loveStory: [
@@ -60,7 +60,7 @@ export const weddingData: WeddingData = {
     {
       year: '2022',
       title: 'Lamaran',
-      description: 'Di hari yang penuh berkah, Imam datang melamar Caca dengan cincin emas dan mahar yang telah dipersiapkan dengan penuh cinta.',
+      description: 'Di hari yang penuh berkah, Imam datang melamar Caca (Salsabila) dengan cincin emas dan mahar yang telah dipersiapkan dengan penuh cinta.',
     },
     {
       year: '2023',
@@ -86,17 +86,17 @@ export const weddingData: WeddingData = {
   bankAccounts: [
     {
       bank: 'Bank Mandiri',
-      name: 'Imam Muharrik',
+      name: 'Imam Muharik A. Md',
       number: '123-00-6789012-3',
     },
     {
       bank: 'Bank BCA',
-      name: 'Salsabilah Rismayanti',
+      name: 'Salsabila Rismayanti S.SOS',
       number: '456-01-2345678-9',
     },
     {
       bank: 'Bank BRI',
-      name: 'Imam Muharrik',
+      name: 'Imam Muharik A. Md',
       number: '7890-01-123456-7-8',
     },
   ],
@@ -139,6 +139,6 @@ export const initialWishes: Wish[] = [
 
 export const siteConfig = {
   title: 'Pernikahan Imam & Caca',
-  description: 'Undangan Pernikahan Imam Muharrik & Salsabilah Rismayanti',
-  url: 'https://rizky-aisyah.vercel.app',
+  description: 'Undangan Pernikahan Imam Muharik A. Md & Salsabila Rismayanti S.SOS',
+  url: 'https://caca-imam-weddinginvitation.vercel.app',
 };
