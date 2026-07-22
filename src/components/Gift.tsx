@@ -100,7 +100,7 @@ export default function Gift() {
         <RevealAnimation delay={0.5}>
           <div className="mt-8 p-5 bg-white/30 backdrop-blur-sm rounded-sm border border-dashed border-gold/20 text-center">
             <p className="font-serif text-xs text-charcoal/60 italic leading-relaxed">
-              "Barangsiapa yang menikahkan, maka ia telah menyempurnakan setengah imannya."
+              "Barang siapa yang menikahkan, maka ia telah menyempurnakan setengah imannya."
             </p>
             <p className="font-sans text-[10px] text-dusty-pink mt-2 tracking-wider">HR. Muslim</p>
           </div>
