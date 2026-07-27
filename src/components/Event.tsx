@@ -95,18 +95,28 @@ export default function Event() {
 
         {/* Map */}
         <RevealAnimation delay={0.6}>
-          <div className="mt-6 h-48 rounded-sm overflow-hidden border border-gold/10">
+          <a
+            href={venue.mapsUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-6 block h-48 rounded-sm overflow-hidden border border-gold/10 relative group cursor-pointer"
+          >
             <iframe
               src={venue.mapEmbed}
               width="100%"
               height="100%"
-              style={{ border: 0 }}
-              allowFullScreen
+              style={{ border: 0, pointerEvents: 'none' }}
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               title="Venue Location"
             />
-          </div>
+            <div className="absolute inset-0 flex items-center justify-center bg-black/0 group-hover:bg-black/10 transition-all duration-300">
+              <span className="opacity-0 group-hover:opacity-100 bg-burgundy text-ivory text-xs font-sans tracking-wider uppercase px-4 py-2 rounded-sm transition-all duration-300 flex items-center gap-2">
+                <MapPin size={14} />
+                Buka di Google Maps
+              </span>
+            </div>
+          </a>
         </RevealAnimation>
       </div>
     </section>
