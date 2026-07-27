@@ -85,9 +85,9 @@ export const weddingData: WeddingData = {
   ],
   bankAccounts: [
     {
-      bank: 'Gopay',
+      bank: 'Bank BNI',
       name: 'Imam Muharik',
-      number: '+62 838-7754-0107',
+      number: '550912475',
     },
     {
       bank: 'Bank BCA',
@@ -112,23 +112,23 @@ export const initialWishes: Wish[] = [
     name: 'Sarah Amelia',
     message: 'Selamat menempuh hidup baru kak! Semoga langgeng dan bahagia selalu. 🎉',
     attendance: 'hadir',
-    date: '11 juli 2026',
+    date: '28 juli 2026',
     avatar: 'SA',
   },
   {
     id: '2',
-    name: 'Budi Santoso',
+    name: 'Sulthon nicholas',
     message: 'Barakallah untuk pernikahannya. Semoga menjadi keluarga yang sakinah, mawaddah, warahmah.',
     attendance: 'hadir',
-    date: '11 juli 2026',
+    date: '28 juli 2026',
     avatar: 'BS',
   },
   {
     id: '3',
-    name: 'Dewi Lestari',
-    message: 'Mohon maaf tidak bisa hadir karena ada acara keluarga. Doa terbaik untuk kalian berdua! 🙏',
-    attendance: 'tidak_hadir',
-    date: '13 juli 2026',
+    name: 'Adik Tercinta😘',
+    message: 'Happy wedding, Kakss! Akhirnya nemu juga pawang yang tahan sama kelakuan yee. Happy for you guys!',
+    attendance: 'hadir',
+    date: '28 juli 2026',
     avatar: 'DL',
   },
 ];
